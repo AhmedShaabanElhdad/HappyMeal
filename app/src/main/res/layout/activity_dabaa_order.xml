@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ahmedabomazin.happymeal.Dabaa_order">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rest_button"
+        android:paddingBottom="8dp"
+        android:paddingRight="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Dabaa Order"
+            android:id="@+id/main_textView4"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="User ID :- "
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.46"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:id="@+id/edit_main_id" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Type :- "
+                android:layout_marginStart="30dp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1.46"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:id="@+id/main_spinner_type1" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Quality :- "
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.46"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_main_quality" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Address :- "
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.46"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_main_address" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.23"
+                android:layout_height="wrap_content"
+                android:text="PickUp Address :- "
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.74"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_main_pickup_address" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Subscribtion :- "
+                android:layout_marginStart="30dp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1.46"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:id="@+id/main_spinner_subscribe" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Time :- "
+                android:layout_marginStart="30dp" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:id="@+id/main_spinner_time" />
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:id="@+id/main_spinner_am_pm" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rest_button"
+            android:id="@+id/btn_Dabaa_calculate" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
